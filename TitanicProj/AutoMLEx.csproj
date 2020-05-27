@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="common\AutoML\ConsoleHelper.cs" />
+    <Compile Remove="common\AutoML\ProgressHandlers.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML" Version="1.4.0" />
+    <PackageReference Include="Microsoft.ML.AutoML" Version="0.16.0" />
+    <PackageReference Include="Microsoft.ML.CpuMath" Version="1.4.0" />
+    <PackageReference Include="Microsoft.ML.DataView" Version="1.4.0" />
+    <PackageReference Include="Microsoft.NETCore.App" Version="2.2.8" />
+    <PackageReference Include="PLplot" Version="5.13.7" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
+    <PackageReference Include="SharpZipLib" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Common\AutoML\" />
+  </ItemGroup>
+
+</Project>
